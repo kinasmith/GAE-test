@@ -1,0 +1,7 @@
+deploy:
+  provider: gae
+  keyfile: YOUR SERVICE ACCOUNT JSON FILE
+  project: gae-test-158421
+before_install:
+- openssl aes-256-cbc -K $encrypted_cf9135e7887d_key -iv $encrypted_cf9135e7887d_iv
+  -in GAE-test-6abbbeac2135.json.enc -out GAE-test-6abbbeac2135.json -d
