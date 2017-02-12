@@ -1,7 +1,3 @@
-deploy:
-  provider: gae
-  keyfile: GAE-test-6abbbeac2135.json.enc
-  project: GAE-test-158421
 before_install:
 - openssl aes-256-cbc -K $encrypted_cf9135e7887d_key -iv $encrypted_cf9135e7887d_iv
   -in GAE-test-6abbbeac2135.json.enc -out GAE-test-6abbbeac2135.json -d
@@ -10,10 +6,17 @@ language: ruby
 # sudo: false
 rvm: 2.2.0
 
-before_script:
-  - sudo git config --global user.name "kinasmith"
-  - sudo git config --global user.email "kina.smith@gmail.com"
-script:
+deploy:
+  provider: gae
+  keyfile: GAE-test-6abbbeac2135.json.enc
+  project: GAE-test-158421
 
+  
+# before_script:
+  # - sudo git config --global user.name "kinasmith"
+  # - sudo git config --global user.email "kina.smith@gmail.com"
+# script:
+  # jekyll build
   # - bundle exec rake deploy
+
   # # So git doesn't die trying to figure out Travis' email address
