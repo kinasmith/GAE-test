@@ -9,6 +9,7 @@ install:
   - echo "Nothing to Install"
 
 script:
+  jekyll build
   - echo "No Script to run"
 
 # [START travis_deploy]
