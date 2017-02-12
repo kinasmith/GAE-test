@@ -29,15 +29,15 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
-  - jekyll-app-engine
+  # - jekyll-app-engine
 exclude:
   - Gemfile
   - Gemfile.lock
   - [vendor]
-
-app_engine:
-  # Insert your configuration here or within _app.yaml
-  # You need to specify a runtime for App Engine
-  runtime: go
-  api_version: go1
-  default_expiration: 300s
+#
+# app_engine:
+#   # Insert your configuration here or within _app.yaml
+#   # You need to specify a runtime for App Engine
+#   runtime: go
+#   api_version: go1
+#   default_expiration: 300s
