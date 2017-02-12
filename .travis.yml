@@ -16,6 +16,6 @@ deploy:
   provider: gae
   skip_cleanup: true
   keyfile: GAE-test-6abbbeac2135.json
-  project: GAE-test-158421
+  project: gae-test-158421
   default: true
 # [END travis_deploy]
