@@ -10,7 +10,7 @@ install:
 
 script:
   jekyll build
-  - echo "No Script to run"
+  # - echo "No Script to run"
 
 # [START travis_deploy]
 deploy:
