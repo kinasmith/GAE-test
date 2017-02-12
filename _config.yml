@@ -33,7 +33,8 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - [vendor]
+
+exclude: [vendor]
 
 app_engine:
   # Insert your configuration here or within _app.yaml
