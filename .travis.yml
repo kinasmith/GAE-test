@@ -10,9 +10,10 @@ language: ruby
 # sudo: false
 rvm: 2.2.0
 
-# before_script:
+before_script:
+  - sudo git config --global user.name "kinasmith"
+  - sudo git config --global user.email "kina.smith@gmail.com"
 script:
-  - bundle exec rake deploy
-  # So git doesn't die trying to figure out Travis' email address
-  - git config user.name "kinasmith"
-  - git config user.email "kina.smith@gmail.com"
+
+  # - bundle exec rake deploy
+  # # So git doesn't die trying to figure out Travis' email address
