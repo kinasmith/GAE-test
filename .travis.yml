@@ -10,9 +10,9 @@ language: ruby
 # sudo: false
 rvm: 2.2.0
 
-before_script:
-    # So git doesn't die trying to figure out Travis' email address
+# before_script:
+script:
+  - bundle exec rake deploy
+  # So git doesn't die trying to figure out Travis' email address
   - git config user.name "kinasmith"
   - git config user.email "kina.smith@gmail.com"
-
-script: bundle exec rake deploy
